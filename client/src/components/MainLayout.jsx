@@ -5,7 +5,7 @@ const MainLayout = () => {
     return (
         <div className={"flex flex-col w-full h-auto bg-primary"}>
             <Header/>
-            <main className="pt-16">
+            <main className="w-full h-auto flex flex-col">
                 <Outlet/>
             </main>
         </div>

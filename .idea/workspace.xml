@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facb75ad-e5e1-4cc0-9f09-896f342540dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/MainLayout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/components/home/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Alert.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Alert.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DashBoardNewSong.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashBoardNewSong.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DashboardAlbums.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardAlbums.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DashboardArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardArtists.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DashboardHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardHome.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DashboardSongs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardSongs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/DashboardUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/FilterButtons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/FilterButtons.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Music.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/music-player/Music.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MusicPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/music-player/MusicPlayer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SongCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/SongCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MainLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/home/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +113,7 @@
       <workItem from="1748402331335" duration="107000" />
       <workItem from="1748402701941" duration="1721000" />
       <workItem from="1748421093082" duration="2116000" />
-      <workItem from="1748435625426" duration="2219000" />
+      <workItem from="1748435625426" duration="4901000" />
     </task>
     <servers />
   </component>

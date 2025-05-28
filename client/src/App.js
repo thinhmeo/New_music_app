@@ -55,11 +55,11 @@ const App = () => {
                     <Route element={<MainLayout/>}>
                         <Route path='/login' element={<Login setAuth={setAuth}/>}/>
                         <Route path='/musics' element={<Music/>}/>
-                        <Route path='/*' element={<Home/>}/>
+                        <Route path='/' element={<Home/>}/>
                     </Route>
                     {/*layout không chứa header*/}
                     <Route>
-                        <Route path='/dashboard/*' element={<Dashboard/>}/>
+                        <Route path='/dashboard/' element={<Dashboard/>}/>
                     </Route>
                 </Routes>
                 }

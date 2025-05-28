@@ -26,14 +26,14 @@ export const Header = () => {
         navigate("/login", {replace: true})
     }
     return (
-        <header className='flex items-center w-full p-4 md:py-2 md:px-6'>
+        <header className='w-full h-auto flex items-center w-full p-4 md:py-2 md:px-6'>
             {/*Logo*/}
-            <NavLink to={"/*"}>
+            <NavLink to={"/"}>
                 <img src={Logo} alt="Logo" className='w-16'/>
             </NavLink>
             {/*Navigation */}
             <ul className='flex items-center justify-center ml-7'>
-                <li className='ms-5 text-lg'><NavLink to={'/home'}
+                <li className='ms-5 text-lg'><NavLink to={'/'}
                                                       className={({isActive}) => isActive ? isActiveStyles : isNotActiveStyles}>Home</NavLink>
                 </li>
                 <li className='ms-5 text-lg'><NavLink to={'/musics'}
