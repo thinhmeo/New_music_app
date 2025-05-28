@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { IoTrash } from "react-icons/io5";
 import { deleteObject, ref } from "firebase/storage";
-import { deleteAlbumById, deleteArtisById, deleteSongById, getAllAlbumns, getAllArtists, getAllSongs } from "../api";
-import { useStateValue } from "../context/StateProvider";
-import { actionType } from "../context/reducer";
-import { storage } from "../config/firebase.config";
+import { deleteAlbumById, deleteArtisById, deleteSongById, getAllAlbumns, getAllArtists, getAllSongs } from "../../api";
+import { useStateValue } from "../../context/StateProvider";
+import { actionType } from "../../context/reducer";
+import { storage } from "../../config/firebase.config";
 
 const SongCard = ({ data, index, type }) => {
     const [isDelete, setIsDelete] = useState(false);

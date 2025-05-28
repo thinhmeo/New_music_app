@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { FaUsers } from "react-icons/fa";
 import { GiLoveSong, GiMusicalNotes } from "react-icons/gi";
 import { RiUserStarFill } from "react-icons/ri";
-import { getAllAlbumns, getAllArtists, getAllSongs, getAllUsers } from "../api";
-import { actionType } from "../context/reducer";
-import { useStateValue } from "../context/StateProvider";
-import { bgColors } from "../utils/styles";
+import { getAllAlbumns, getAllArtists, getAllSongs, getAllUsers } from "../../api";
+import { actionType } from "../../context/reducer";
+import { useStateValue } from "../../context/StateProvider";
+import { bgColors } from "../../utils/styles";
 
 
 export const DashboardCard = ({ icon, name, count }) => {

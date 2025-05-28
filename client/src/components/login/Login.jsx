@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 
-import { app } from '../config/firebase.config'
+import { app } from '../../config/firebase.config'
 import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 import { FcGoogle } from 'react-icons/fc'
 import { useNavigate } from 'react-router-dom'
 
-import { useStateValue } from '../context/StateProvider'
-import { validateUser } from '../api'
-import { actionType } from '../context/reducer'
+import { useStateValue } from '../../context/StateProvider'
+import { validateUser } from '../../api'
+import { actionType } from '../../context/reducer'
 
-import { LoginBg } from '../assets/video'
+import { LoginBg } from '../../assets/video'
 
 const Login = ({ setAuth }) => {
 
@@ -76,7 +76,7 @@ const Login = ({ setAuth }) => {
             onClick={loginWithGoogle}
           >
             <FcGoogle className='text-xl' />
-            Gign in with Google
+            Sign in with Google
           </div>
         </div>
       </div>

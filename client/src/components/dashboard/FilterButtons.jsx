@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { IoChevronDown } from "react-icons/io5";
-import { useStateValue } from "../context/StateProvider";
-import { actionType } from "../context/reducer";
+import { useStateValue } from "../../context/StateProvider";
+import { actionType } from "../../context/reducer";
 
 const FilterButtons = ({ filterData, flag }) => {
     const [filterName, setFilterName] = useState(null);

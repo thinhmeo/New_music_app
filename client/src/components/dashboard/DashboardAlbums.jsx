@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
-import { getAllAlbumns } from '../api';
-import { actionType } from '../context/reducer';
+import { getAllAlbumns } from '../../api';
+import { actionType } from '../../context/reducer';
 import SongCard from './SongCard';
-import { useStateValue } from '../context/StateProvider';
+import { useStateValue } from '../../context/StateProvider';
 
 const DashboardAlbums = () => {
     const [{ allAlbums }, dispath] = useStateValue();

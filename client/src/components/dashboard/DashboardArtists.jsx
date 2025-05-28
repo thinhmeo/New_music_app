@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { useStateValue } from '../context/StateProvider';
-import { getAllArtists } from '../api';
-import { actionType } from '../context/reducer';
+import { useStateValue } from '../../context/StateProvider';
+import { getAllArtists } from '../../api';
+import { actionType } from '../../context/reducer';
 import SongCard from './SongCard';
 
 const DashboardArtists = () => {

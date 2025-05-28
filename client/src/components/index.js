@@ -1,18 +1,18 @@
-export { default as Login } from "./Login";
-export { default as Home } from "./Home";
-export { default as Header } from "./Header";
-export { default as Music } from "./Music"
+export { default as Login } from "./login/Login";
+export { default as Home } from "./home/Home";
+export { default as Header } from "./header/Header";
+export { default as Music } from "./music-player/Music"
 
 //Dashboard components
-export { default as Dashboard } from "./Dashboard";
-export { default as DashboardHome } from "./DashboardHome";
-export { default as DashboardSongs } from "./DashboardSongs";
-export { default as DashBoardNewSong } from "./DashBoardNewSong";
-export { default as DashboardUsers } from "./DashboardUsers";
-export { default as DashboardAlbums } from "./DashboardAlbums";
-export { default as DashboardArtists } from "./DashboardArtists";
-export { default as SongCard } from "./SongCard";
+export { default as Dashboard } from "./dashboard/Dashboard";
+export { default as DashboardHome } from "./dashboard/DashboardHome";
+export { default as DashboardSongs } from "./dashboard/DashboardSongs";
+export { default as DashBoardNewSong } from "./dashboard/DashBoardNewSong";
+export { default as DashboardUsers } from "./dashboard/DashboardUsers";
+export { default as DashboardAlbums } from "./dashboard/DashboardAlbums";
+export { default as DashboardArtists } from "./dashboard/DashboardArtists";
+export { default as SongCard } from "./dashboard/SongCard";
 
-export { default as FilterButtons } from "./FilterButtons";
-export { default as Alert } from "./Alert";
-export { default as MusicPlayer } from "./MusicPlayer";
+export { default as FilterButtons } from "./dashboard/FilterButtons";
+export { default as Alert } from "./dashboard/Alert";
+export { default as MusicPlayer } from "./music-player/MusicPlayer";

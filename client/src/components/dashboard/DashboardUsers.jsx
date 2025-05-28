@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useStateValue } from '../context/StateProvider';
+import { useStateValue } from '../../context/StateProvider';
 import { motion } from "framer-motion";
 import { MdDelete } from "react-icons/md";
 
 import moment from "moment";
-import { changingUserRole, getAllUsers, removeUser } from '../api';
-import { actionType } from "../context/reducer";
+import { changingUserRole, getAllUsers, removeUser } from '../../api';
+import { actionType } from "../../context/reducer";
 
 export const DashboardUserCard = ({ data, index }) => {
     const [{ user, allUsers }, dispatch] = useStateValue();

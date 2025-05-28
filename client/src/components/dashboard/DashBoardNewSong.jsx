@@ -11,8 +11,8 @@ import { motion } from "framer-motion";
 import { BiCloudUpload } from "react-icons/bi";
 import { MdDelete } from "react-icons/md";
 
-import { storage } from "../config/firebase.config";
-import { useStateValue } from "../context/StateProvider";
+import { storage } from "../../config/firebase.config";
+import { useStateValue } from "../../context/StateProvider";
 import {
     getAllAlbumns,
     getAllArtists,
@@ -20,10 +20,10 @@ import {
     saveNewAlbum,
     saveNewArtist,
     saveNewSong,
-} from "../api";
-import { actionType } from "../context/reducer";
+} from "../../api";
+import { actionType } from "../../context/reducer";
 import FilterButtons from "./FilterButtons";
-import { filterByLanguage, filters } from "../utils/supportfunctions";
+import { filterByLanguage, filters } from "../../utils/supportfunctions";
 import { data, label } from "framer-motion/client";
 // import AlertSuccess from "./AlertSuccess";
 // import AlertError from "./AlertError";
