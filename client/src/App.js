@@ -46,9 +46,10 @@ const App = () => {
     return (
         <AnimatePresence exitBeforeEnter>
             <div className='h-auto min-w-[680px] bg-primary flex flex-col justify-center items-center'>
-                {/* Hiển thị header nếu không phải trang login */}
+
                 <Routes>
                     {/* Layout có header, không áp dụng cho /login */}
+                    {/* Hiển thị header nếu không phải trang login */}
                     {location.pathname !== "/login" ? (
                         <Route element={<MainLayout />}>
                             <Route path="/" element={<Home />} />
