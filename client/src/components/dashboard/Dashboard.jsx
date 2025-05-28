@@ -18,7 +18,7 @@ const Dashboard = () => {
     const [{ alertType }, dispath] = useStateValue();
     return (
         <div className='w-full h-auto flex flex-col items-center justify-center bg-primary'>
-
+            {/*Navigation header*/}
             <div className='w-[60%] my-2 p-4 flex items-center justify-evenly'>
                 <NavLink to={"/"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}><IoReturnUpBack  className='text-2xl text-textColor' /> Back to Home</NavLink>
                 <NavLink to={"/dashboard/home"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}><IoHome className='text-2x1 text-textColor' /> </NavLink>

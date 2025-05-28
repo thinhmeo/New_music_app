@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import {Header} from './components';
 import {Route, Routes, useNavigate, useLocation} from 'react-router-dom'
 import {Dashboard, Music, Home, Login, MusicPlayer} from './components'
 import {app} from './config/firebase.config'
@@ -50,18 +49,17 @@ const App = () => {
                 {/* Hiển thị header nếu không phải trang login */}
                 {location.pathname !== "/login" &&
 
-                <Routes>
-                    {/*Layout chứa header*/}
-                    <Route element={<MainLayout/>}>
-                        <Route path='/login' element={<Login setAuth={setAuth}/>}/>
-                        <Route path='/musics' element={<Music/>}/>
-                        <Route path='/' element={<Home/>}/>
-                    </Route>
-                    {/*layout không chứa header*/}
-                    <Route>
-                        <Route path='/dashboard/' element={<Dashboard/>}/>
-                    </Route>
-                </Routes>
+                    <Routes>
+                        {/*Layout chứa header*/}
+                        <Route element={<MainLayout/>}>
+                            <Route path='/login' element={<Login setAuth={setAuth}/>}/>
+                            <Route path='/musics' element={<Music/>}/>
+                            <Route path='/' element={<Home/>}/>
+                        </Route>
+                        {/*layout không chứa header*/}
+                        <Route path='/dashboard/*' element={<Dashboard/>}/>
+
+                    </Routes>
                 }
                 {isSongPlaying && (
                     <motion.div
