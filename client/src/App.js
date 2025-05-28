@@ -47,20 +47,22 @@ const App = () => {
         <AnimatePresence exitBeforeEnter>
             <div className='h-auto min-w-[680px] bg-primary flex flex-col justify-center items-center'>
                 {/* Hiển thị header nếu không phải trang login */}
-                {location.pathname !== "/login" &&
-
-                    <Routes>
-                        {/*Layout chứa header*/}
-                        <Route element={<MainLayout/>}>
-                            <Route path='/login' element={<Login setAuth={setAuth}/>}/>
-                            <Route path='/musics' element={<Music/>}/>
-                            <Route path='/' element={<Home/>}/>
+                <Routes>
+                    {/* Layout có header, không áp dụng cho /login */}
+                    {location.pathname !== "/login" ? (
+                        <Route element={<MainLayout />}>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/musics" element={<Music />} />
                         </Route>
-                        {/*layout không chứa header*/}
-                        <Route path='/dashboard/*' element={<Dashboard/>}/>
+                    ) : null}
 
-                    </Routes>
-                }
+                    {/* Trang login không có Header */}
+                    <Route path="/login" element={<Login setAuth={setAuth} />} />
+
+                    {/* Admin Dashboard */}
+                    <Route path="/dashboard/*" element={<Dashboard />} />
+                </Routes>
+
                 {isSongPlaying && (
                     <motion.div
                         initial={{opacity: 0, y: 50}}
