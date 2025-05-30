@@ -1,24 +1,26 @@
 const express = require("express");
-const app = express();
-require("dotenv/config")
-
 const cors = require("cors");
-const { default: mongoose } = require("mongoose");
+const dotenv = require("dotenv");
+//Load file config mongoDB riêng
+const connectDB = require("./config/db");
 
-app.use(cors({ origin: true }));
+dotenv.config();
+
+const app = express();
+app.use(cors());
 app.use(express.json());
 
+// Test route
+app.get("/", (req, res) => res.json("Chào đằng ấy..."));
 
-app.get("/", (req, res) => {
-    return res.json("chào đằng ấy...")
-});
-
+// Connect MongoDB
+connectDB();
 // user authentication route
 const userRoute = require("./routes/auth");
 app.use("/api/users/", userRoute);
 
 // Artist Routes
-const artistsRoutes = require("./routes/artist");
+const artistsRoutes = require("./routes/artists");
 app.use("/api/artists/", artistsRoutes);
 
 // Albums Routes
@@ -29,11 +31,5 @@ app.use("/api/albums/", albumRoutes);
 const songRoutes = require("./routes/songs");
 app.use("/api/songs/", songRoutes);
 
-mongoose.connect(process.env.DB_STRING, { useNewUrlParser: true });
-mongoose.connection
-    .once("open", () => console.log("Connected"))
-    .on("error", (error) => {
-        console.log('ERROR : ${error}');
-    })
-
-app.listen(4000, () => console.log("Listeningto to port 4000"));
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

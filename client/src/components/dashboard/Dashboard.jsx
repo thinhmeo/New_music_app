@@ -24,7 +24,7 @@ const Dashboard = () => {
                 <NavLink to={"/dashboard/home"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}><IoHome className='text-2x1 text-textColor' /> </NavLink>
                 <NavLink to={"/dashboard/user"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}>Users</NavLink>
                 <NavLink to={"/dashboard/songs"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}>Songs</NavLink>
-                <NavLink to={"/dashboard/artist"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}>Artists</NavLink>
+                <NavLink to={"/dashboard/artists"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}>Artists</NavLink>
                 <NavLink to={"/dashboard/albums"} className={({ isActive }) => isActive ? isActiveStyles : isNotActiveStyles}>Albums</NavLink>
             </div>
 
@@ -35,7 +35,7 @@ const Dashboard = () => {
                     <Route path='/home' element={<DashboardHome />} />
                     <Route path='/user' element={<DashboardUsers />} />
                     <Route path='/songs' element={<DashboardSongs />} />
-                    <Route path='/artist' element={<DashboardArtists />} />
+                    <Route path='/artists' element={<DashboardArtists />} />
                     <Route path='/albums' element={<DashboardAlbums />} />
                     <Route path='/newSong' element={<DashBoardNewSong />} />
                 </Routes>

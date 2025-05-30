@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facb75ad-e5e1-4cc0-9f09-896f342540dd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/server/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/albumController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/artistController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/songController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashBoardNewSong.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashBoardNewSong.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardArtists.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Artist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Song.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/albums.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/albums.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/artists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/songs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -111,7 +123,10 @@
       <workItem from="1748402701941" duration="1721000" />
       <workItem from="1748421093082" duration="2116000" />
       <workItem from="1748435625426" duration="5670000" />
-      <workItem from="1748441502969" duration="1957000" />
+      <workItem from="1748441502969" duration="2123000" />
+      <workItem from="1748522346641" duration="119000" />
+      <workItem from="1748565392090" duration="659000" />
+      <workItem from="1748566265825" duration="2574000" />
     </task>
     <servers />
   </component>

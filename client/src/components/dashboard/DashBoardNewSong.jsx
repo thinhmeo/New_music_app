@@ -59,7 +59,7 @@ const DashBoardNewSong = () => {
             getAllArtists().then(data => {
                 dispath({
                     type: actionType.SET_ALL_ARTISTS,
-                    allArtists: data.artist,
+                    allArtists: data.artists,
                 })
             })
         }
@@ -128,7 +128,7 @@ const DashBoardNewSong = () => {
                 imageUrl: songImageCover,
                 songURL: audioImageCover,
                 album: albumFilter,
-                artist: artistFilter,
+                artists: artistFilter,
                 language: languageFilter,
                 category: filterTerm,
             }
@@ -192,7 +192,7 @@ const DashBoardNewSong = () => {
                 getAllArtists().then((data) => {
                     dispath({
                         type: actionType.SET_ALL_ARTISTS,
-                        allUsers: data.artist
+                        allUsers: data.artists
                     })
                 })
             })
@@ -335,7 +335,7 @@ const DashBoardNewSong = () => {
             </div>
 
 
-            {/* Image uploader for artist */}
+            {/* Image uploader for artists */}
             <p className=" text-xl font-semibold text-headingColor "> Artist Details </p>
             <div className="bg-card backdrop-blur-md w-full h-300 rounded-md border-2 border-dotted border-gray-300 cursor-pointer">
                 {isArtistUploading && <FileLoader progress={artistUploadingProgress} />}
@@ -358,7 +358,7 @@ const DashBoardNewSong = () => {
                 )}
             </div>
 
-            {/* artist name */}
+            {/* artists name */}
             <input type="text" placeholder="Artist name..."
                 className="w-full p-3 rounded-md text-base font-semibold text-textColor outline-none shadow-sm border border-gray-300 bg-transparent"
                 value={artistName}
