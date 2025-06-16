@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="facb75ad-e5e1-4cc0-9f09-896f342540dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/config/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/albumController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/artistController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/songController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashBoardNewSong.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashBoardNewSong.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardArtists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardArtists.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/album.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Album.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Artist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/song.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Song.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/albums.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/albums.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/artist.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/artists.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/dashboard/DashboardUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/dashboard/DashboardUsers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/songController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/songController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Song.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Song.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/songs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +122,9 @@
       <workItem from="1748522346641" duration="119000" />
       <workItem from="1748565392090" duration="659000" />
       <workItem from="1748566265825" duration="2574000" />
+      <workItem from="1750001848986" duration="476000" />
+      <workItem from="1750062535433" duration="5238000" />
+      <workItem from="1750076704944" duration="1699000" />
     </task>
     <servers />
   </component>

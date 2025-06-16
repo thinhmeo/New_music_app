@@ -14,14 +14,12 @@ const songSchema = mongoose.Schema(
             type: String,
             required: true,
         },
-        // dùng ObjectId để liên kết với album thay vì String
         album: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "album",
+            type: String, // sử dụng String thay vì ObjectId để lưu tên album
+            required: true,
         },
         artist: {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: "Artist",
+            type: String, // sử dụng String thay vì ObjectId để lưu tên nghệ sĩ
             required: true,
         },
         language: {
@@ -31,7 +29,6 @@ const songSchema = mongoose.Schema(
         category: {
             type: String,
             required: true,
-
         },
     },
     { timestamps: true }

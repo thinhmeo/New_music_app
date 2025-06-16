@@ -56,3 +56,14 @@ exports.deleteSong = async (req, res) => {
         return res.status(500).json({ success: false, msg: error.message });
     }
 };
+
+//Get songs by artistId
+exports.getSongsByArtist = async (req, res) => {
+    try {
+        const artistName = req.params.artistName;
+        const songs = await Song.find({ artist: artistName }).sort({ createdAt: -1 });
+        return res.status(200).json({ success: true, songs });
+    } catch (error) {
+        return res.status(500).json({ success: false, msg: error.message });
+    }
+};
