@@ -144,11 +144,9 @@ const DashboardUsers = () => {
 
                 {/* table body content */}
                 {
-                    allUsers && (
-                        allUsers?.map((data, i) => (
-                            <DashboardUserCard data={data} index={i} />
-                        ))
-                    )
+                    allUsers && allUsers.map((data, i) => (
+                        <DashboardUserCard key={data._id} data={data} index={i} />
+                    ))
                 }
 
             </div>

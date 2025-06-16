@@ -1,5 +1,5 @@
 import axios from "axios";
-import { async } from "@firebase/util";
+import {async} from "@firebase/util";
 
 const baseURL = "http://localhost:4000/";
 
@@ -11,7 +11,8 @@ export const validateUser = async (token) => {
             }
         });
         return res.data;
-    } catch (error) { }
+    } catch (error) {
+    }
 };
 
 export const getAllUsers = async () => {
@@ -49,11 +50,19 @@ export const getAllSongs = async () => {
         return null;
     }
 };
+// Get all songs by artist
+export const getSongsByArtist = async (artistName) => {
+    return await fetch(`${baseURL}api/songs/getByArtist/${encodeURIComponent(artistName)}`).then((res) => res.json());
+};
+// Get all songs by album
+export const getSongsByAlbum = async (albumName) => {
+    return await fetch(`${baseURL}api/songs/getByAlbum/${encodeURIComponent(albumName)}`).then((res) => res.json());
+};
 
 
 export const changingUserRole = async (userId, role) => {
     try {
-        const res = axios.put(`${baseURL}api/users/updateRole/${userId}`, { data: { role: role } });
+        const res = axios.put(`${baseURL}api/users/updateRole/${userId}`, {data: {role: role}});
         return res;
     } catch (error) {
         return null;
@@ -72,7 +81,7 @@ export const removeUser = async (userId) => {
 
 export const saveNewSong = async (data) => {
     try {
-        const res = axios.post(`${baseURL}api/songs/save`, { ...data });
+        const res = axios.post(`${baseURL}api/songs/save`, {...data});
         return (await res).data.savedSong;
     } catch (error) {
         return null;
@@ -81,7 +90,7 @@ export const saveNewSong = async (data) => {
 
 export const saveNewArtist = async (data) => {
     try {
-        const res = axios.post(`${baseURL}api/artists/save`, { ...data });
+        const res = axios.post(`${baseURL}api/artists/save`, {...data});
         return (await res).data.savedArtist;
     } catch (error) {
         return null;
@@ -90,7 +99,7 @@ export const saveNewArtist = async (data) => {
 
 export const saveNewAlbum = async (data) => {
     try {
-        const res = axios.post(`${baseURL}api/albums/save`, { ...data });
+        const res = axios.post(`${baseURL}api/albums/save`, {...data});
         return (await res).data.savedAlbum;
     } catch (error) {
         return null;
