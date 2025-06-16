@@ -13,7 +13,7 @@ import { actionType } from '../../context/reducer';
 const MusicPlayer = () => {
     const nextTrack = () => {
         console.log(songIndex, allSongs.length - 1)
-        if (songIndex > allSongs.length - 1) {
+        if (songIndex >= allSongs.length - 1) {
             dispatch({
                 type: actionType.SET_SONG_INDEX,
                 songIndex: 0,

@@ -13,6 +13,8 @@ export const actionType = {
     SET_ALERT_TYPE: "SET_ALERT_TYPE",
     SET_ISSONG_PLAYING: "SET_ISSONG_PLAYING",
     SET_SONG_INDEX: "SET_SONG_INDEX",
+    SET_FAVORITE_SONGS: "SET_FAVORITE_SONGS",
+
 };
 
 const reducer = (state, action) => {
@@ -91,6 +93,19 @@ const reducer = (state, action) => {
                 ...state,
                 songIndex: action.songIndex,
             };
+
+        case actionType.SET_FAVORITE_SONGS:
+            return {
+                ...state,
+                favoriteSongs: action.favoriteSongs,
+            };
+
+        case actionType.REMOVE_FAVORITE:
+            return {
+                ...state,
+                favoriteSongs: state.favoriteSongs.filter(song => song._id !== action.payload),
+            };
+
 
 
         default:

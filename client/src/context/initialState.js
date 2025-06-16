@@ -11,4 +11,5 @@ export const initialState = {
     alertType: null,
     isSongPlaying: false,
     songIndex: 0,
+    favoriteSongs: JSON.parse(localStorage.getItem("favoriteSongs")) || [],
 };
